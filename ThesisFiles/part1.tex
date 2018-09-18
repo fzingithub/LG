@@ -1,0 +1,137 @@
+\section{GIT空间状态关系图示}
+
+\textbf{~~~~~~~~~~Working Area.  Stage.  Local Repository.  Remote Repository}
+
+\textbf{~~~~~~~~~~Origin.  Modified or Untracked.  Staged.  Committed.  Pushed}
+
+\subsection{代码提交与工作流程图}
+
+~
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1\textwidth]{1.eps}
+  \caption{代码提交与工作流程图}
+\end{figure}
+
+
+\subsection{五种状态撤销更改图}
+
+~
+
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1\textwidth]{2.eps}
+  \caption{五种状态撤销更改图}
+\end{figure}
+\newpage
+\section{创建版本库}
+\subsection{初始化版本库}
+\begin{lstlisting}
+$git init
+\end{lstlisting}
+
+\subsection{添加文件到版本库（本地仓库）}
+\begin{lstlisting}
+$git add <files> or git add . (completely add)
+$git commit -m <message>
+\end{lstlisting}
+\section{\textcolor{red}{\textbf{版本控制}}}
+
+\subsection{\textbf{GIT RESET用法解析}}
+
+\subsection{版本回退}
+\subsubsection{查看提交历史}
+\begin{lstlisting}
+$git log --pretty=oneline --graph --all --decorate
+\end{lstlisting}
+
+\subsubsection{版本回退}
+\begin{lstlisting}
+$git reset --hard commit_id
+\end{lstlisting}
+
+\subsubsection{版本前置}
+\begin{lstlisting}
+$git reflog
+$git reset --hard commit_id
+\end{lstlisting}
+
+\subsection{撤销修改}
+\subsubsection{丢弃工作区的修改}
+\begin{lstlisting}
+$git checkout <files>
+\end{lstlisting}
+
+\subsubsection{丢弃已添加到暂存区的修改}
+\begin{lstlisting}
+$git reset HEAD <files>
+$git checkout <files>
+\end{lstlisting}
+
+\subsection{删除文件}
+\subsubsection{删除工作区文件}
+\begin{lstlisting}
+$git rm <files>
+\end{lstlisting}
+
+\subsubsection{确认删除则提交版本库}
+\begin{lstlisting}
+$git add .
+$git commit -m <message>
+\end{lstlisting}
+
+\subsubsection{误删则暂存区替换工作区版本}
+\begin{lstlisting}
+$git checkout <files>
+\end{lstlisting}
+
+\section{远程仓库}
+\subsection{添加远程库}
+\begin{lstlisting}
+$git remote add origin <URL>
+\end{lstlisting}
+
+\subsection{推送最新修改}
+\begin{lstlisting}
+$git push -u origin master (at first)
+$git push
+\end{lstlisting}
+
+\subsection{从远程库克隆}
+\begin{lstlisting}
+$git clone <URL>
+\end{lstlisting}
+
+\section{\textcolor{red}{\textbf{分支管理}}}
+
+\section{标签管理}
+\subsection{创建标签}
+\begin{lstlisting}
+$git tag <tagname> or
+$git tag -a <tagname> -m <message>
+\end{lstlisting}
+
+\subsection{查看所有标签}
+\begin{lstlisting}
+$git tag
+\end{lstlisting}
+
+\subsection{操作标签}
+\subsubsection{推送本地标签到远程}
+\begin{lstlisting}
+$git push origin <tagname> (one tag)
+$git push origin --tags (all tags)
+\end{lstlisting}
+
+\subsubsection{删除本地标签}
+\begin{lstlisting}
+$git tag -d <tagname>
+\end{lstlisting}
+
+\subsubsection{删除远程标签}
+\begin{lstlisting}
+$git push origin :refs/tags/<tagname>
+\end{lstlisting}
