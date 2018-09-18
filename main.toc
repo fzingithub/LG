@@ -1,31 +1,46 @@
-\contentsline {section}{\numberline {1}GIT空间状态关系图示}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}代码提交与工作流程图}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}五种状态撤销更改图}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}创建版本库}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}初始化版本库}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}添加文件到版本库（本地仓库）}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}\leavevmode {\color {red}\textbf {版本控制}}}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}\textbf {GIT RESET用法解析}}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}版本回退}{4}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}查看提交历史}{4}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}版本回退}{4}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}版本前置}{4}{subsubsection.3.2.3}
-\contentsline {subsection}{\numberline {3.3}撤销修改}{5}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}丢弃工作区的修改}{5}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}丢弃已添加到暂存区的修改}{5}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}删除文件}{5}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}删除工作区文件}{5}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}确认删除则提交版本库}{5}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}误删则暂存区替换工作区版本}{5}{subsubsection.3.4.3}
-\contentsline {section}{\numberline {4}远程仓库}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}添加远程库}{6}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}推送最新修改}{6}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}从远程库克隆}{6}{subsection.4.3}
-\contentsline {section}{\numberline {5}\leavevmode {\color {red}\textbf {分支管理}}}{6}{section.5}
-\contentsline {section}{\numberline {6}标签管理}{6}{section.6}
-\contentsline {subsection}{\numberline {6.1}创建标签}{6}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}查看所有标签}{6}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}操作标签}{7}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}推送本地标签到远程}{7}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}删除本地标签}{7}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}删除远程标签}{7}{subsubsection.6.3.3}
+\contentsline {section}{\numberline {1}GIT空间状态关系图示}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}代码提交与工作流程图}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}五种状态撤销更改图}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}创建版本库}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}初始化版本库}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}添加文件到版本库（本地仓库）}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}\leavevmode {\color {red}\textbf {版本控制}}}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}\textbf {GIT RESET用法解析}}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}版本回退}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}查看提交历史}{7}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}版本回退}{7}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}版本前置}{7}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}撤销修改}{7}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}丢弃工作区的修改}{7}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}丢弃已添加到暂存区的修改}{7}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}删除文件}{7}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}删除工作区文件}{7}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}确认删除则提交版本库}{7}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}误删则暂存区替换工作区版本}{8}{subsubsection.3.4.3}
+\contentsline {section}{\numberline {4}远程仓库}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}添加远程库}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}推送最新修改}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}从远程库克隆}{8}{subsection.4.3}
+\contentsline {section}{\numberline {5}\leavevmode {\color {red}\textbf {分支管理}}}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}分支的管理与合并}{8}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}查看分支}{8}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}创建分支}{9}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}切换分支}{9}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}创建+切换分支}{9}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}合并某分支到当前分支}{9}{subsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.6}删除分支}{9}{subsubsection.5.1.6}
+\contentsline {subsection}{\numberline {5.2}修复bug 临时存储}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}多人协作}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}查看远程库信息}{9}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}本地推送分支}{10}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}本地创建和远程分支对应的分支}{10}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}建立本地分支和远程分支的关联}{10}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}远程抓取分支}{10}{subsubsection.5.3.5}
+\contentsline {subsection}{\numberline {5.4}REBASE}{10}{subsection.5.4}
+\contentsline {section}{\numberline {6}标签管理}{11}{section.6}
+\contentsline {subsection}{\numberline {6.1}创建标签}{11}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}查看所有标签}{11}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}操作标签}{11}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}推送本地标签到远程}{11}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}删除本地标签}{11}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}删除远程标签}{11}{subsubsection.6.3.3}

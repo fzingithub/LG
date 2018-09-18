@@ -1,8 +1,10 @@
 \section{GIT空间状态关系图示}
 
-\textbf{~~~~~~~~~~Working Area.  Stage.  Local Repository.  Remote Repository}
+\begin{lstlisting}
+             Working Area.  Stage.  Local Repository.  Remote Repository
+             Origin.  Modified or Untracked.  Staged.  Committed.  Pushed
+\end{lstlisting}
 
-\textbf{~~~~~~~~~~Origin.  Modified or Untracked.  Staged.  Committed.  Pushed}
 
 \subsection{代码提交与工作流程图}
 
@@ -38,9 +40,53 @@ $git init
 $git add <files> or git add . (completely add)
 $git commit -m <message>
 \end{lstlisting}
+~\\
+~\\
+~\\
 \section{\textcolor{red}{\textbf{版本控制}}}
 
 \subsection{\textbf{GIT RESET用法解析}}
+\begin{lstlisting}
+$git reset [--soft|--mixed|--hard] <commit>
+\end{lstlisting}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{GR1.eps}
+  \caption{原始状态}
+\end{figure}
+
+
+\begin{lstlisting}
+$git reset [--soft] <B commit>
+\end{lstlisting}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{GR2.eps}
+  \caption{After git reset --soft B}
+\end{figure}
+
+
+\begin{lstlisting}
+$git reset [--mixed] <B commit>
+\end{lstlisting}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{GR3.eps}
+  \caption{After git reset --mixed B}
+\end{figure}
+
+
+\begin{lstlisting}
+$git reset [--hard] <B commit>
+\end{lstlisting}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{GR4.eps}
+  \caption{After git reset --hard B}
+\end{figure}
+
+
 
 \subsection{版本回退}
 \subsubsection{查看提交历史}
@@ -105,7 +151,85 @@ $git push
 $git clone <URL>
 \end{lstlisting}
 
+~\\
 \section{\textcolor{red}{\textbf{分支管理}}}
+\subsection{分支的管理与合并}
+\subsubsection{查看分支}
+\begin{lstlisting}
+$git branch
+\end{lstlisting}
+
+\subsubsection{创建分支}
+\begin{lstlisting}
+$git branch <name>
+\end{lstlisting}
+
+\subsubsection{切换分支}
+\begin{lstlisting}
+$git checkout <name>
+\end{lstlisting}
+
+\subsubsection{创建+切换分支}
+\begin{lstlisting}
+$git checkout -b <name>
+\end{lstlisting}
+
+\subsubsection{合并某分支到当前分支}
+\begin{lstlisting}
+$git merge <name>
+\end{lstlisting}
+
+\subsubsection{删除分支}
+\begin{lstlisting}
+$git branch -d <name>
+\end{lstlisting}
+
+\subsection{修复bug 临时存储}
+\begin{lstlisting}
+$git stash
+$git checkout <bug>
+$git stash pop
+\end{lstlisting}
+
+\subsection{多人协作}
+\subsubsection{查看远程库信息}
+\begin{lstlisting}
+$git remote -v
+\end{lstlisting}
+
+\subsubsection{本地推送分支}
+\begin{lstlisting}
+$git push origin branch-name  (if fail,git pull)
+\end{lstlisting}
+
+\subsubsection{本地创建和远程分支对应的分支}
+\begin{lstlisting}
+$git checkout -b branch-name origin/branch-name
+\end{lstlisting}
+
+\subsubsection{建立本地分支和远程分支的关联}
+\begin{lstlisting}
+$git branch --set-upstream branch-name origin/branch-name
+\end{lstlisting}
+
+\subsubsection{远程抓取分支}
+\begin{lstlisting}
+$git pull
+\end{lstlisting}
+
+\subsection{REBASE}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{3.eps}
+  \caption{rebase}
+\end{figure}
+
+\begin{lstlisting}
+$git rebase <branch name>
+$fix conflict
+$git add <files>
+$git rebase --continue or git rebase --abort or git rebase --skip
+\end{lstlisting}
 
 \section{标签管理}
 \subsection{创建标签}
@@ -134,4 +258,4 @@ $git tag -d <tagname>
 \subsubsection{删除远程标签}
 \begin{lstlisting}
 $git push origin :refs/tags/<tagname>
-\end{lstlisting}
+\end{lstlisting} 
