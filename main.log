@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  19 SEP 2018 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  26 SEP 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,9 +930,6 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-(c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 )
@@ -1293,25 +1290,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 624DC0A25AE210B8C86001FFC77709C0;5338
-(rerunfilecheck)             After:  AAA3E40AD9979EA02342EB95A11C0640;5292.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: AAA3E40AD9979EA02342EB95A11C0640;5292.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 25320 strings out of 494534
- 434290 string characters out of 6176265
- 474889 words of memory out of 5000000
- 28231 multiletter control sequences out of 15000+600000
+ 25309 strings out of 494534
+ 433980 string characters out of 6176265
+ 474483 words of memory out of 5000000
+ 28222 multiletter control sequences out of 15000+600000
  580657 words of font info for 206 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,11n,56p,10460b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,56p,10460b,2069s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
 imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
 /Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
@@ -1379,7 +1369,7 @@ snu8f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><c:/
 texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb><c:/texlive/2018/t
 exmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb><c:/texlive/2018/texmf-dist/font
 s/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (11 pages, 1525680 bytes).
+Output written on main.pdf (11 pages, 1525722 bytes).
 PDF statistics:
  962 PDF objects out of 1000 (max. 8388607)
  762 compressed objects within 8 object streams
